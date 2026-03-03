@@ -1,0 +1,74 @@
+/*
+ * Copyright (c) 1996 - 2026 IAR Systems AB.
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+/*
+ * IAR Embedded Workbench tutorial
+ *
+ * SetupSimple.mac
+ *
+ * Macro package for C-SPY to simulate Fibonacci data input.
+ *
+ * $Revision: 113247 $
+ */
+
+__var _fileHandle;
+
+execUserSetup()
+{
+  __message "execUserSetup() called.\n";
+
+  /* Opens the text file for ASCII reading. */
+  _fileHandle = __openFile("$PROJ_DIR$\\InputData.txt", "r");
+  if( !_fileHandle )
+  {
+    __message "Could not open file.\n";
+  }
+}
+
+Access()
+{
+  __message "Access() called.\n";
+
+  /* In this tutorial we read the fib values from a file. */
+  __var _fibValue;
+  if( 0 == __readFile( _fileHandle, &_fibValue ) )
+  {
+    USART1_DR = _fibValue;
+  }
+  else
+  {
+    __message "Error reading value from file.\n";
+  }
+
+  __message "USART1_DR = 0x", _fibValue:%X,"\n";
+}
+
+execUserReset()
+{
+  __message "execUserReset() called.\n";
+
+  if( _fileHandle )
+  {
+    __resetFile( _fileHandle );
+  }
+}
+
+execUserExit()
+{
+  __message "execUserExit() called.\n";
+
+  __closeFile( _fileHandle );
+}

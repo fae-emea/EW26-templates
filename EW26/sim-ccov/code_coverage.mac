@@ -1,0 +1,99 @@
+/*
+ * Copyright (c) 2019-2026 IAR Systems AB
+*/
+
+__var _fileHandle;
+__var _breakID1;
+__var _breakID2;
+__var _in_data;
+__var _out_data;
+
+execUserSetup()
+{
+	__message "execUserSetup() called.\n";
+	simulationSetup ();
+}
+
+execUserReset()
+{
+	__message "execUserReset() called.\n";
+	if( _fileHandle )
+	{
+		__resetFile( _fileHandle );
+	}
+}
+
+execUserExit()
+{
+	__message "execUserExit() called.\n";
+	simulationShutdown();
+}
+
+simulationSetup()
+{
+	/* Open the text file with the input values and expected results for ASCII reading */
+	_fileHandle = __openFile("$PROJ_DIR$\\test_data.txt", "r");
+	if( !_fileHandle )
+	{
+		__message "Could not open file.\n" ;
+	}
+	else
+	{
+		__message "File 'test_data.txt' opened for reading.\n";
+	}
+	
+	/* Set up the immediate breakpoint for input data */
+	_breakID1 = __setSimBreak("temp1", "R", "Input_Data()"); 
+	if( -1 == _breakID1 )
+	{
+		__message "Error: failed to set immediate breakpoint for input data.\n";
+	}
+	
+	/* Set up the immediate breakpoint for comparing the results */
+	_breakID2 = __setSimBreak("temp2", "R", "Output_Data()"); 
+	if( -1 == _breakID2 )
+	{
+		__message "Error: failed to set immediate breakpoint for output data.\n";
+	}
+}
+
+simulationShutdown()
+{
+	__clearBreak( _breakID1 );
+	__clearBreak( _breakID2 );
+	__closeFile( _fileHandle );
+}
+
+Input_Data()
+{
+	// read the input values and copy them to the coresponding variable
+	if( 0 == __readFile( _fileHandle, &_in_data ) )
+	{
+		input = _in_data;
+	}
+	else
+	{
+		__message "Error reading value from file.\n";
+	}
+}
+
+Output_Data()
+{
+	// read the expected results and compare them with the calculated results
+	if( 0 == __readFile( _fileHandle, &_out_data ) )
+	{
+		//
+		if( result == _out_data )
+		{
+			__message "Test ok: ", _in_data," - ",_out_data,"\n";
+		}
+		else
+		{
+			__message "Test failed: ", _in_data," - ",_out_data,"\n";
+		}
+	}
+	else
+	{
+		__message "Error reading value from file.\n";
+	}
+}

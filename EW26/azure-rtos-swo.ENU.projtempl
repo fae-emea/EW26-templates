@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<template>
+  <description>SWO Trace demonstration on Azure RTOS (IAR STM32F429II-ACA board).</description>
+  <displayname>Azure RTOS</displayname>
+
+  <files>
+    <file>$PROJ_DIR$\Cpp17demo.cpp</file>
+  </files>
+
+</template>
+
+

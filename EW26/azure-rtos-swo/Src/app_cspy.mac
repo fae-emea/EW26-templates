@@ -1,0 +1,36 @@
+__var _interruptID;
+__var _breakID;
+
+__var _start;
+__var _end;
+
+execUserSetup()
+{
+  __message "MACRO: execUserSetup() called.\n";
+
+  debuggerSetup();
+}
+
+execUserExit()
+{
+  __message "MACRO: execUserExit() called.\n";
+
+  debuggerShutdown();
+}
+
+debuggerSetup()
+{
+  _breakID= __setDataLogBreak("traceAverage", "W", "TRUE");
+}
+
+debuggerShutdown()
+{
+  __clearBreak(_breakID);
+}
+
+saveTraceBuffer()
+{
+  _start = __smessage "Memory:0x",RecorderDataPtr:%x;
+  _end  =  __smessage "Memory:0x",(RecorderDataPtr + 1):%x;
+  __memorySave(start,end,"intel-extended", "$PROJ_DIR$\\trace.hex");
+}

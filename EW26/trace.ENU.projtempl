@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<template>
+  <description>Trace demonstration on the IAR STM32F429II-ACA board.</description>
+  <displayname>Trace</displayname>
+
+  <files>
+    <file>$PROJ_DIR$/readme.txt</file>
+    <file>$PROJ_DIR$/app/main.c</file>
+  </files>
+
+</template>
+
+

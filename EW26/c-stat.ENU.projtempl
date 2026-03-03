@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<template>
+  <description>IAR C-STAT demonstration.</description>
+  <displayname>Code Analysis</displayname>
+
+  <files>
+    <file>$PROJ_DIR$\app\c-stat.c</file>
+  </files>
+
+</template>
+
+

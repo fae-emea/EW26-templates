@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<template>
+  <description>Simulates a serial port in the IAR C-SPY Debugger.</description>
+  <displayname>Serial port</displayname>
+
+  <files>
+    <file>$PROJ_DIR$/SerialPortInterrupt.c</file>
+  </files>
+
+</template>
+
+

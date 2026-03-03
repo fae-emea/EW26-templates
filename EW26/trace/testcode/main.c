@@ -1,0 +1,27 @@
+#include "test_config.h"
+
+
+int main(void)
+{
+		test_001();
+		test_002();
+		test_003();
+		test_004();
+		test_005();
+		test_006();
+		test_007();
+		test_008();
+		test_009();
+		test_010();
+		test_011();
+		test_012();
+		test_013();
+		test_014();
+		test_015();
+		test_016();
+
+  /* Infinite loop */
+  while (1)
+  {
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<template>
+  <description>C++ language features (simulator).</description>
+  <displayname>C++ 14/17 features</displayname>
+
+  <files>
+    <file>$PROJ_DIR$\Cpp17demo.cpp</file>
+  </files>
+
+</template>
+
+
