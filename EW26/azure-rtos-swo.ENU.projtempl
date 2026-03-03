@@ -5,7 +5,7 @@
   <displayname>Azure RTOS</displayname>
 
   <files>
-    <file>$PROJ_DIR$\Cpp17demo.cpp</file>
+    <file>$PROJ_DIR$\Src\main.c</file>
   </files>
 
 </template>
