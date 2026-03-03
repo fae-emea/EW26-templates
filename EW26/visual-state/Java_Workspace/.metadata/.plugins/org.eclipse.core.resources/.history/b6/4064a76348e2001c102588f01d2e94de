@@ -1,0 +1,252 @@
+// Id:        System1.java
+//
+// Function:  Contains all API functions.
+//
+// Generated for the variant: reduced
+//
+// This is an automatically generated file. It will be overwritten by the Coder.
+//
+// DO NOT EDIT THE FILE!
+
+
+
+public class System1
+{
+  private final ISystem1ActionHandler mHandler;
+
+
+  //
+  // Constructor initializing action handler.
+  //
+  public System1 (ISystem1ActionHandler handler)
+  {
+    mHandler = handler;
+  }
+
+
+  //
+  // Undefined State.
+  //
+  static final byte STATE_UNDEFINED = 127;
+
+
+  //
+  // Undefined Event.
+  //
+  static final byte EVENT_UNDEFINED = 127;
+
+
+  //
+  // Undefined Event Group.
+  //
+  static final byte EVENT_GROUP_UNDEFINED = 127;
+
+
+  //
+  // Event Termination ID.
+  //
+  static final byte EVENT_TERMINATION_ID = 127;
+
+
+  //
+  // Event Identifier Definitions.
+  //
+  public static final byte SE_RESET = 0;
+  public static final byte eButton1 = 1;
+  public static final byte eButton2 = 2;
+
+
+  //
+  // State Identifier Definitions.
+  //
+  static final byte TopLevelStateMachine1_Region1_State_red = 0;
+  static final byte TopLevelStateMachine1_Region1_State_yellow = 1;
+  static final byte TopLevelStateMachine1_Region1_State_green = 2;
+
+
+  //
+  // State Machine Identifier Definitions.
+  //
+  static final byte M_TopLevelStateMachine1_Region1 = 0;
+
+
+  private byte[] System1CSV = new byte[1];
+
+
+  public VSResult vsDeduct (byte EventNo)
+  {
+
+    // scoped for events
+    {
+      byte[] WSV =
+      {
+        STATE_UNDEFINED
+      };
+
+      switch (EventNo)
+      {
+      case SE_RESET:
+        {
+          aLEDyellowOff();
+          aLEDredOn();
+          aLEDgreenOff();
+          WSV[M_TopLevelStateMachine1_Region1/*0*/] = TopLevelStateMachine1_Region1_State_red;
+        }
+        break;
+
+      case eButton1:
+        {
+          if (System1CSV[M_TopLevelStateMachine1_Region1/*0*/] == TopLevelStateMachine1_Region1_State_red)
+          {
+            aLEDgreenOn();
+            aLEDredOff();
+            aLEDyellowOff();
+            WSV[M_TopLevelStateMachine1_Region1/*0*/] = TopLevelStateMachine1_Region1_State_green;
+          }
+          else if (System1CSV[M_TopLevelStateMachine1_Region1/*0*/] == TopLevelStateMachine1_Region1_State_yellow)
+          {
+            aLEDyellowOff();
+            aLEDredOn();
+            aLEDgreenOff();
+            WSV[M_TopLevelStateMachine1_Region1/*0*/] = TopLevelStateMachine1_Region1_State_red;
+          }
+          else if (System1CSV[M_TopLevelStateMachine1_Region1/*0*/] == TopLevelStateMachine1_Region1_State_green)
+          {
+            aLEDyellowOn();
+            aLEDredOff();
+            aLEDgreenOff();
+            WSV[M_TopLevelStateMachine1_Region1/*0*/] = TopLevelStateMachine1_Region1_State_yellow;
+          }
+        }
+        break;
+
+      case eButton2:
+        {
+          if (System1CSV[M_TopLevelStateMachine1_Region1/*0*/] == TopLevelStateMachine1_Region1_State_red)
+          {
+            aLEDyellowOn();
+            aLEDredOff();
+            aLEDgreenOff();
+            WSV[M_TopLevelStateMachine1_Region1/*0*/] = TopLevelStateMachine1_Region1_State_yellow;
+          }
+          else if (System1CSV[M_TopLevelStateMachine1_Region1/*0*/] == TopLevelStateMachine1_Region1_State_yellow)
+          {
+            aLEDgreenOn();
+            aLEDredOff();
+            aLEDyellowOff();
+            WSV[M_TopLevelStateMachine1_Region1/*0*/] = TopLevelStateMachine1_Region1_State_green;
+          }
+          else if (System1CSV[M_TopLevelStateMachine1_Region1/*0*/] == TopLevelStateMachine1_Region1_State_green)
+          {
+            aLEDyellowOff();
+            aLEDredOn();
+            aLEDgreenOff();
+            WSV[M_TopLevelStateMachine1_Region1/*0*/] = TopLevelStateMachine1_Region1_State_red;
+          }
+        }
+        break;
+
+      default:
+        return VSResult.SES_RANGE_ERR;
+      }
+
+      /* Change the state vector */
+      {
+        int i;
+        for (i = 0; i < 1; ++i)
+        {
+          if (WSV[i] != STATE_UNDEFINED)
+          {
+            System1CSV[i] = WSV[i];
+          }
+        }
+      }
+    }
+
+    return VSResult.SES_OKAY;
+  }
+
+
+  public static VSResult VSElementExpl (IdentifierType IdentType, byte IdentNo, String[] Text)
+  {
+    VSResult ret = VSResult.SES_OKAY;
+    switch (IdentType)
+    {
+    default:
+      ret = VSResult.SES_TYPE_ERR;
+      break;
+    }
+    return ret;
+  }
+
+
+  public static VSResult vsElementName (IdentifierType IdentType, byte IdentNo, String[] Text)
+  {
+    VSResult ret = VSResult.SES_OKAY;
+    switch (IdentType)
+    {
+    default:
+      ret = VSResult.SES_TYPE_ERR;
+      break;
+    }
+    return ret;
+  }
+
+
+  public void vsInitAll ()
+  {
+    byte i;
+    for (i = 0; i < 1; ++i)
+    {
+      System1CSV[i] = STATE_UNDEFINED;
+    }
+    vsInitExternalVariables();
+    vsInitInternalVariables();
+  }
+
+
+  public void vsInitExternalVariables ()
+  {
+  }
+
+
+  public void vsInitInternalVariables ()
+  {
+  }
+
+
+  //
+  // Action handler forwarding methods.
+  //
+
+  private void aLEDgreenOff()
+  {
+    mHandler.aLEDgreenOff();
+  }
+
+  private void aLEDgreenOn()
+  {
+    mHandler.aLEDgreenOn();
+  }
+
+  private void aLEDredOff()
+  {
+    mHandler.aLEDredOff();
+  }
+
+  private void aLEDredOn()
+  {
+    mHandler.aLEDredOn();
+  }
+
+  private void aLEDyellowOff()
+  {
+    mHandler.aLEDyellowOff();
+  }
+
+  private void aLEDyellowOn()
+  {
+    mHandler.aLEDyellowOn();
+  }
+
+} // end of System1 class

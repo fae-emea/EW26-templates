@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<iarProjectConnection name="Workspace" oneShot="false" version="1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="IarProjectConnection_1.4.xsd">
+
+  <files>
+    <group name="Header Files">
+      <path>./Workspace.h</path>
+      <path>./System1.h</path>
+      <path>./CSpyLink.h</path>
+    </group>
+    <group name="Source Files">
+      <path>./Workspace.c</path>
+      <path>./System1.c</path>
+      <path>./CSpyLink.c</path>
+    </group>
+  </files>
+
+</iarProjectConnection>
