@@ -1,6 +1,6 @@
 //*****************************************************************************
 //
-// Copyright (c) 2022, IAR Systems AB.
+// Copyright (c) 2022-2026, IAR Systems AB.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
