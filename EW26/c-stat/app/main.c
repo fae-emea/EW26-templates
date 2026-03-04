@@ -51,7 +51,7 @@ static volatile uint32_t TimingDelay;
 /* variable for critical section entry control */
 uint32_t CriticalSecCntr;
 
-extern void crun(void);
+extern void code_analysis(void);
 
 /*************************************************************************
  * Function Name: DelayResolution100us
@@ -97,8 +97,8 @@ void TimingDelay_Decrement(void)
  *************************************************************************/
 int main(void)
 {
-uint8_t n;
-uint8_t led_mask;
+  uint8_t n;
+  uint8_t led_mask;
 
   /*!< At this stage the microcontroller clock setting is already configured,
        this is done through SystemInit() function which is called from startup
@@ -107,14 +107,12 @@ uint8_t led_mask;
        system_stm32f4xx.c file
      */
 
-
   /* SysTick Config */
   if(SysTick_Config(SystemCoreClock/10000))
   {
     /* Capture error */
     while (1);
   }
-
   
   /* Init Switches */
   STM_Switch1Init();
@@ -129,8 +127,8 @@ uint8_t led_mask;
 
   while(1)
   {
-    
-    crun();
+    code_analysis();
+
     /* Delay */
     DelayResolution100us(10000/TICK_PER_SEC);
 

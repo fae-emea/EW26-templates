@@ -36,7 +36,7 @@
                 </option>
                 <option>
                     <name>MacFile</name>
-                    <state>$PROJ_DIR$/../Src/app_cspy.mac</state>
+                    <state>$PROJ_DIR$/Src/app_cspy.mac</state>
                 </option>
                 <option>
                     <name>MemOverride</name>

@@ -16,19 +16,19 @@
                 <debug>1</debug>
                 <option>
                     <name>BrowseInfoPath</name>
-                    <state>Debug\BrowseInfo</state>
+                    <state>Debug/BrowseInfo</state>
                 </option>
                 <option>
                     <name>ExePath</name>
-                    <state>Debug\Exe</state>
+                    <state>Debug/Exe</state>
                 </option>
                 <option>
                     <name>ObjPath</name>
-                    <state>Debug\Obj</state>
+                    <state>Debug/Obj</state>
                 </option>
                 <option>
                     <name>ListPath</name>
-                    <state>Debug\List</state>
+                    <state>Debug/List</state>
                 </option>
                 <option>
                     <name>GEndianMode</name>
@@ -201,7 +201,7 @@
                 </option>
                 <option>
                     <name>BuildFilesPath</name>
-                    <state>Debug\</state>
+                    <state>Debug/</state>
                 </option>
                 <option>
                     <name>PointerAuthentication</name>
@@ -354,12 +354,12 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
-                    <state>$PROJ_DIR$\</state>
-                    <state>$PROJ_DIR$\app\</state>
-                    <state>$PROJ_DIR$\modules\</state>
-                    <state>$PROJ_DIR$\board\</state>
-                    <state>$PROJ_DIR$\..\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\inc\</state>
-                    <state>$PROJ_DIR$\..\STM32F4xx_DSP_StdPeriph_Lib\Libraries\CMSIS\Device\ST\STM32F4xx\Include</state>
+                    <state>$PROJ_DIR$</state>
+                    <state>$PROJ_DIR$/app</state>
+                    <state>$PROJ_DIR$/modules</state>
+                    <state>$PROJ_DIR$/board</state>
+                    <state>$PROJ_DIR$/STM32F4xx_DSP_StdPeriph_Lib/Libraries/STM32F4xx_StdPeriph_Driver/inc</state>
+                    <state>$PROJ_DIR$/STM32F4xx_DSP_StdPeriph_Lib/Libraries/CMSIS/Device/ST/STM32F4xx/Include</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -783,7 +783,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$TOOLKIT_DIR$\config\linker\ST\stm32f429xI.icf</state>
+                    <state>$TOOLKIT_DIR$/config/linker/ST/stm32f429xI.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -1140,108 +1140,99 @@
         </file>
     </group>
     <group>
-        <name>StdPeriph_Driver</name>
-        <group>
-            <name>Library</name>
-            <excluded>
-                <configuration>Debug</configuration>
-            </excluded>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_adc.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_can.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_crc.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_aes.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_des.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_tdes.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dac.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dbgmcu.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dcmi.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dma.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_exti.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_flash.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fmc.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_md5.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_sha1.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_i2c.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_iwdg.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_pwr.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rng.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rtc.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_sdio.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spi.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_syscfg.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_tim.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_wwdg.c</name>
-            </file>
-        </group>
+        <name>STM32F4xx_StdPeriph_Driver</name>
         <file>
-            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\Librarybuild\Debug\Exe\Library.a</name>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_adc.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_can.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_crc.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_aes.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_des.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_tdes.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dac.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dbgmcu.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dcmi.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dma.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_exti.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_flash.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fmc.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_md5.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_sha1.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_i2c.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_iwdg.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_pwr.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rng.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rtc.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_sdio.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spi.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_syscfg.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_tim.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_wwdg.c</name>
         </file>
     </group>
     <file>

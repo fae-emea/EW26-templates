@@ -16,19 +16,19 @@
                 <debug>1</debug>
                 <option>
                     <name>BrowseInfoPath</name>
-                    <state>Debug\BrowseInfo</state>
+                    <state>Debug/BrowseInfo</state>
                 </option>
                 <option>
                     <name>ExePath</name>
-                    <state>Debug\Exe</state>
+                    <state>Debug/Exe</state>
                 </option>
                 <option>
                     <name>ObjPath</name>
-                    <state>Debug\Obj</state>
+                    <state>Debug/Obj</state>
                 </option>
                 <option>
                     <name>ListPath</name>
-                    <state>Debug\List</state>
+                    <state>Debug/List</state>
                 </option>
                 <option>
                     <name>GEndianMode</name>
@@ -94,7 +94,7 @@
                 </option>
                 <option>
                     <name>RTConfigPath2</name>
-                    <state>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</state>
+                    <state>$TOOLKIT_DIR$/inc/c/DLib_Config_Full.h</state>
                 </option>
                 <option>
                     <name>GBECoreSlave</name>
@@ -201,7 +201,7 @@
                 </option>
                 <option>
                     <name>BuildFilesPath</name>
-                    <state>Debug\</state>
+                    <state>Debug/</state>
                 </option>
                 <option>
                     <name>PointerAuthentication</name>
@@ -362,7 +362,7 @@
                     <state>$PROJ_DIR$/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy</state>
                     <state>$PROJ_DIR$/Drivers/CMSIS/Device/ST/STM32F4xx/Include</state>
                     <state>$PROJ_DIR$/Drivers/CMSIS/Include</state>
-                    <state>$PROJ_DIR$\Java_Workspace\VisualState_Demo\VS_Coder</state>
+                    <state>$PROJ_DIR$/Java_Workspace/VisualState_Demo/VS_Coder</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
