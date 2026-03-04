@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
 <template>
-  <description>Trace demonstration on the IAR STM32F429II-ACA board.</description>
+  <description>ETM Trace demonstration (IAR STM32F429II-ACA board).</description>
   <displayname>Trace</displayname>
 
   <files>

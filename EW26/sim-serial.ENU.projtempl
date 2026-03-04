@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
 <template>
-  <description>Simulates a serial port in the IAR C-SPY Debugger.</description>
+  <description>Simulated interrupt-driven serial port peripheral using C-SPY Macros.</description>
   <displayname>Serial port</displayname>
 
   <files>

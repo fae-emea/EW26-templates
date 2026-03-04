@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
 <template>
-  <description>Visual State demonstration.</description>
+  <description>Demonstration project of a Traffic Lights control with dual operating modes using automatically C/C++/Java/C# generated code for a finite-state machine (FSM).</description>
   <displayname>Visual State</displayname>
 
   <files>

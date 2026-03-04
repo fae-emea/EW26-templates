@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
 <template>
-  <description>Demonstrate C-SPY Code Coverage using the simulator.</description>
+  <description>Explore the code coverage capabilities provided by the C-SPY Debugger (simulator).</description>
   <displayname>Code Coverage</displayname>
 
   <files>

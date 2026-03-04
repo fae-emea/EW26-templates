@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
 <template>
-  <description>IAR C-STAT demonstration.</description>
+  <description>IAR C-STAT static code analysis and IAR C-RUN runtime analysis demonstration.</description>
   <displayname>Code Analysis</displayname>
 
   <files>
