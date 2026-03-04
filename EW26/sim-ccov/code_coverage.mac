@@ -32,7 +32,7 @@ execUserExit()
 simulationSetup()
 {
 	/* Open the text file with the input values and expected results for ASCII reading */
-	_fileHandle = __openFile("$PROJ_DIR$\\test_data.txt", "r");
+	_fileHandle = __openFile("$PROJ_DIR$/test_data.txt", "r");
 	if( !_fileHandle )
 	{
 		__message "Could not open file.\n" ;
