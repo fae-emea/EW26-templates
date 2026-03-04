@@ -57,7 +57,7 @@ execUserExit()
 simulationSetup()
 {
   /* Open the text file for ASCII reading. */
-  _fileHandle = __openFile("$PROJ_DIR$\\InputData.txt", "r");
+  _fileHandle = __openFile("$PROJ_DIR$/InputData.txt", "r");
   if( !_fileHandle )
   {
     __message "Could not open file.\n" ;
