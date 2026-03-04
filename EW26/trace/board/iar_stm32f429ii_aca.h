@@ -2,7 +2,7 @@
  *
  *    Used with ICCARM and AARM.
  *
- *    (c) Copyright IAR Systems 2014
+ *    (c) Copyright IAR Systems 2014-2026
  *
  *    File name   : iar_stm32f429ii_aca.h
  *    Description : IAR-STM32F429II-ACA board support package definitions

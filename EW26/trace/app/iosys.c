@@ -2,7 +2,7 @@
  *
  *    Used with ICCARM and AARM.
  *
- *    (c) Copyright IAR Systems 2013
+ *    (c) Copyright IAR Systems 2013-2026
  *
  *    File name   : iosys.c
  *    Description : printf helper functions

@@ -2,7 +2,7 @@
 *
 *    Used with ICCARM and AARM.
 *
-*    (c) Copyright IAR Systems 2014
+*    (c) Copyright IAR Systems 2014-2026
 *
 *    File name   : main.c
 *    Description : Main module

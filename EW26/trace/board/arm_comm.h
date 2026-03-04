@@ -4,7 +4,7 @@
  **
  **    Used with ARM IAR C/C++ Compiler and Assembler.
  **
- **    (c) Copyright IAR Systems 2006
+ **    (c) Copyright IAR Systems 2006-2026
  **
  **    $Revision: 39 $
  **
