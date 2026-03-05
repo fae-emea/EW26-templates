@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
 <template>
-  <description>Demonstration project of a Traffic Lights control with dual operating modes using automatically C/C++/Java/C# generated code for a finite-state machine (FSM).</description>
+  <description>IAR Visual State generates verifiable and documented API's in C/C++/C#/Java for controlling finite-state machines (FSM). This C project demonstrates the concept of using a FSM for controlling traffic lights in two distinct modes of operation: "full" or "reduced".</description>
   <displayname>Visual State</displayname>
 
   <files>
